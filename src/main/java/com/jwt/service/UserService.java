@@ -32,15 +32,15 @@ public void initRolesAndUsers(){
     roleDao.save(adminRole);
 
     Role userRole = new Role();
-    userRole.setRoleName("user");
+    userRole.setRoleName("User");
     userRole.setRoleDesc("User Role");
     roleDao.save(userRole);
 
     User adminUser = new User();
-    adminUser.setUserName("Admin User");
+    adminUser.setUserName("AdminUser");
     adminUser.setFirstName("Admin");
     adminUser.setLastName("Admin");
-    adminUser.setPassword("Admin@123");
+    adminUser.setPassword("$2a$10$RBEdXTfVuWxeCi/hCyBCZe3QRjUPPR5.lVWrvL485i8ST19gCuS3W");
     Set<Role> adminRoles = new HashSet<>();
     adminRoles.add(adminRole);
     adminUser.setRole(adminRoles);
