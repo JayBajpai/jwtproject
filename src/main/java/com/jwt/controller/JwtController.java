@@ -15,6 +15,6 @@ public class JwtController {
     private JwtService jwtService;
     @PostMapping({"/authenticate"})
     public void createJwtToken(@RequestBody JwtRequest jwtRequest){
-
+     return JwtService.createJwtToken(jwtRequest);
     }
 }
