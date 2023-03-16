@@ -1,5 +1,5 @@
 package com.jwt.controller;
-
+import com.jwt.entity.JwtResponse;
 import com.jwt.entity.JwtRequest;
 import com.jwt.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
